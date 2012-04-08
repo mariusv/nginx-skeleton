@@ -1,0 +1,13 @@
+[DEFAULT]
+sites_dir=/etc/nginx/sites-available/%s.conf
+supervisor_conf_dir=/etc/supervisord.d/%s
+
+vhosts_dir=/srv
+
+[mysite]
+type=php5
+aliases=www.mariusv.com mariusv.com
+
+[djangosite]
+type=django
+aliases=www.mariusv.com
